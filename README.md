@@ -33,6 +33,12 @@ To maintain consistency across multi-year datasets, each season is saved using a
 
 All files are stored in the `/data` directory and are preprocessed for feature engineering and model input. This naming convention simplifies version control, model training workflows, and future scalability.
 
+### Data Consolidation
+To streamline preprocessing and model training, all six season files were **merged into a single master dataset**. This unified file enables:
+- Consistent feature engineering across seasons
+- Scalable model training and evaluation
+- Simplified data access for reproducibility
+
 ## Feature Engineering Summary
 
 | Feature               | Description                                                  |
