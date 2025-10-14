@@ -14,6 +14,24 @@ This repository presents a machine learning pipeline for predicting Premier Leag
 - **Libraries**: scikit-learn, pandas, NumPy, matplotlib, seaborn
 - **Environment**: Jupyter Notebooks
 - **Version Control**: Git & GitHub
+  
+## Data Sources
+
+This project utilizes match data from **six Premier League seasons**, stored as structured CSV files. Each file contains team performance metrics, match outcomes, and features engineered for predictive modeling.
+
+### Season Mapping Convention
+To maintain consistency across multi-year datasets, each season is saved using a shorthand identifier based on the end year:
+
+| Season         | File Name             |
+|----------------|-----------------------|
+| 2020/2021      | `PL Season 2021.csv`  |
+| 2021/2022      | `PL Season 2122.csv`  |
+| 2022/2023      | `PL Season 2223.csv`  |
+| 2023/2024      | `PL Season 2324.csv`  |
+| 2024/2025      | `PL Season 2425.csv`  |
+| 2025/2026      | `PL Season 2526.csv`  |
+
+All files are stored in the `/data` directory and are preprocessed for feature engineering and model input. This naming convention simplifies version control, model training workflows, and future scalability.
 
 ## Feature Engineering Summary
 
@@ -25,7 +43,8 @@ This repository presents a machine learning pipeline for predicting Premier Leag
 | Form Streak            | Encoded win/loss/draw streak over last 5 games               |
 | Head-to-Head Score     | Historical win ratio between competing teams                 |
 
-## Model Performance
+##  xG Regression Modeling
+Model Performance is as follows
 - **Accuracy**: 72% on validation set
 - **F1 Score**: 0.68 (balanced across classes)
 - **Evaluation Metrics**: Confusion matrix, ROC curve, precision-recall analysis
