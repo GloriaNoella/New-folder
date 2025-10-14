@@ -44,7 +44,7 @@ All files are stored in the `/data` directory and are preprocessed for feature e
 | Head-to-Head Score     | Historical win ratio between competing teams                 |
 
 ##  xG Regression Modeling
-Model Performance is as follows
+Model Performance is as follows:
 - **Accuracy**: 72% on validation set
 - **F1 Score**: 0.68 (balanced across classes)
 - **Evaluation Metrics**: Confusion matrix, ROC curve, precision-recall analysis
